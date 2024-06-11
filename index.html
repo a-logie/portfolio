@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Logie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
+    <link rel="icon" type="image/svg+xml" sizes="any" media="prefers-color-scheme: dark" href="./imgs/favicon-dark.svg">
+    <link rel="icon" type="image/svg+xml" sizes="any" media="prefers-color-scheme: light" href="./imgs/favicon-light.svg">
+    <script src="https://kit.fontawesome.com/098a14c4d9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="preloader" id="preloader">
+        <div style="--i:1" class="hidden"></div>
+        <div style="--i:2" class="hidden"></div>
+        <div style="--i:3" class="hidden"></div>
+        <span style="--i:4" class="hidden">LOADING</span>
+    </div>
+
+    <div class="mobile-nav hidden" onclick="mobileNavToggle()" style="--i:45">
+        <i class="fa-solid fa-bars-staggered id" id="bars"></i>
+        <i class="fa-solid fa-xmark" id="xMark"></i>
+    </div>
+
+    <div class="mobile-nav-screen" id="mobileNav" style="--i:12; display: none;">
+        <a href="#info" class="nav-btn mobile-btn">
+            <i class="fa-solid fa-info"></i>
+            <span class="nav-type">info</span>
+        </a>
+
+        <a href="#info" class="nav-btn mobile-btn" style="--i:14">
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="nav-type">locations</span>
+        </a>
+
+        <a href="#info" class="nav-btn mobile-btn" style="--i:16">
+            <i class="fa-solid fa-message"></i>
+            <span class="nav-type">contact</span>
+        </a>
+    </div>
+    
+    <nav id="nav" style="height: 4rem;">
+        <a class="nav-brand hidden" href="#home" style="--i:5">
+            <i class="fa-solid fa-code nav-logo"></i>
+            <span class="nav-title">Logie</span>
+        </a>
+
+        <div class="btns">
+            <div class="scaler hidden" style="--i:10">
+                <a class="nav-btn absolute hidden" href="#info">
+                    <i class="fa-solid fa-info before-icon hidden"></i>
+                    <span class="circle"></span>
+                    <span class="after-text">info</span>
+                </a>
+            </div>
+            
+            <div class="scaler hidden" style="--i:15">
+                <a class="nav-btn absolute hidden" href="#locations">
+                    <i class="fa-solid fa-location-dot before-icon hidden"></i>
+                    <span class="circle"></span>
+                    <span class="after-text">locations</span>
+                </a>
+            </div>
+
+            <div class="scaler hidden" style="--i:20">
+                <a class="nav-btn absolute hidden" href="#contact">
+                    <i class="fa-solid fa-message before-icon hidden"></i>
+                    <span class="circle"></span>
+                    <span class="after-text">contact</span>
+                </a>
+            </div>
+
+            <div class="nav-break"></div>
+
+            <i class="pin fa-solid fa-thumbtack" id="pin" style="rotate: 35deg; opacity: 0.3;" onclick="pinToggle()"></i>
+        </div>
+    </nav>
+
+    <div class="top" id="home">
+        <div class="wavy">
+            <div class="last name">
+                <span style="--i:7"  class="hidden wavy-letter">L</span>
+                <span style="--i:8"  class="hidden wavy-letter">O</span>
+                <span style="--i:9"  class="hidden wavy-letter">G</span>
+                <span style="--i:10"  class="hidden wavy-letter">I</span>
+                <span style="--i:10"  class="hidden wavy-letter">E</span>
+            </div>
+        </div>
+
+        <div class="info hidden" style="--i:11">
+            <div class="brand">
+                <a class="codepen icon-btn" href="#">
+                    <i class="fa-brands fa-codepen"></i>
+                    <span>codepen</span>
+                </a>
+
+                <a class="github icon-btn" href="#">
+                    <i class="fa-brands fa-github"></i>
+                    <span>github</span>
+                </a>
+            </div>
+            <div class="break"></div>
+            <div class="text hidden" style="--i:12">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aperiam aliquam porro pariatur dolor aliquid, quasi tempora cupiditate a adipisci accusamus cumque ipsa beatae cum tenetur enim provident odio praesentium!</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-container hidden" id="info">
+        <span class="title hidden">ABOUT</span>
+        <span class="text hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum tempus egestas sed sed risus. Consectetur a erat nam at lectus urna duis. Augue interdum velit euismod in pellentesque massa placerat. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Tellus molestie nunc non blandit massa enim nec. Suspendisse in est ante in nibh mauris cursus. Id neque aliquam vestibulum morbi blandit cursus. Non quam lacus suspendisse faucibus interdum posuere. Suspendisse sed nisi lacus sed viverra tellus in hac. Quis blandit turpis cursus in hac habitasse platea dictumst quisque.</span>
+        <span class="text hidden">Fusce ut placerat orci nulla pellentesque dignissim. Et egestas quis ipsum suspendisse. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Viverra aliquet eget sit amet tellus cras adipiscing. Odio euismod lacinia at quis risus sed vulputate odio ut. Vivamus at augue eget arcu. Mi tempus imperdiet nulla malesuada pellentesque elit eget. Gravida neque convallis a cras. Dictumst quisque sagittis purus sit amet. Purus in mollis nunc sed id semper. Proin fermentum leo vel orci porta non pulvinar neque. Magna fringilla urna porttitor rhoncus dolor purus non enim. Mauris a diam maecenas sed enim ut sem viverra. Dolor sed viverra ipsum nunc. Ultrices sagittis orci a scelerisque purus semper eget duis at. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Etiam non quam lacus suspendisse faucibus interdum posuere. Dui faucibus in ornare quam viverra. Nisl nisi scelerisque eu ultrices vitae auctor eu augue ut.</span>
+    </div>
+
+    <div class="info-container hidden" id="info">
+        <span class="title hidden">WHERE</span>
+        <span class="text hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus turpis massa tincidunt dui ut ornare lectus. Donec ultrices tincidunt arcu non sodales neque. Consequat id porta nibh venenatis cras sed felis eget. Euismod quis viverra nibh cras pulvinar mattis nunc sed. Dui id ornare arcu odio. At augue eget arcu dictum varius. Est placerat in egestas erat imperdiet sed euismod nisi. Aliquam vestibulum morbi blandit cursus risus. Facilisis sed odio morbi quis. Aliquet nec ullamcorper sit amet risus. Faucibus scelerisque eleifend donec pretium vulputate. Non diam phasellus vestibulum lorem sed. Adipiscing diam donec adipiscing tristique risus nec feugiat. Natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Sit amet venenatis urna cursus eget nunc. Nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus.</span>
+    </div>
+
+    <footer>
+        
+        <div class="footer-important">
+            <div class="column hidden" style="--i:0">
+                <span class="title">Projects</span>
+                <a class="footer-content">websites</a>
+                <a class="footer-content">scripts</a>
+                <a class="footer-content">music</a>
+                <a class="footer-content">3d</a>
+                <a class="footer-content">all public projects</a>
+            </div>
+    
+            <div class="column hidden" style="--i:4">
+                <a class="title">Services</a>
+                <a class="footer-content">hire me</a>
+                <a class="footer-content">ask a question</a>
+            </div>
+    
+            <div class="column hidden" style="--i:8">
+                <a class="title">This Website</a>
+                <a class="footer-content">source</a>
+                <a class="footer-content">settings</a>
+            </div>
+        </div>
+
+        <div class="advert">
+            <i class="fa-solid fa-code hidden" style="--i:25"></i>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+    <script defer src="dataLog.js"></script>
+</body>
+</html>
